@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Doubt about params?</h1>
+    <div class="container">
+        <div class="row">
+            <h3>The term params refers to the route parameters, which are dynamic values specified in the URL pattern.
+                In this case, the route pattern is /articles/:articleTitle, where :articleTitle is a route parameter
+                placeholder. When a request is made to this route, the specific value of :articleTitle is extracted from
+                the URL and made available to the route handler function as part of the req.params object.
+
+                In this specific example, the route handler function is retrieving a single article from the database
+                based on the articleTitle parameter. The req.params.articleTitle value is used as the query criteria to
+                find the corresponding article document.
+
+                Route parameters are a powerful tool for creating dynamic and flexible routes in web applications. They
+                allow you to handle requests based on specific data provided in the URL, enabling more specific and
+                targeted responses.
+            </h3>
+            <h1>req.params = { articleTitle: 'aws' } <span>
+                    <p>//when aws is called</p>
+                </span><br>
+                req.paramas.articleTitle = aws
+            </h1>
+        </div>
+
+    </div>
+
+    <h2>or read in google bard <a href="https://g.co/bard/share/b247bc1e449b">clickme</a></h2>
+
+</body>
+
+</html>

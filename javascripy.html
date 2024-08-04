@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+
+
+
+<body>
+
+    
+    
+<h1 id="sasi"></h1>
+
+
+<button id="buttons">click me</button>
+
+
+<h1 id="sasi1">hi iam ajmal</h1>
+
+
+<button id="buttons1">click me 2</button>
+
+
+<div id="parent">
+
+    <div id="fc" class="sq"></div>
+    <div id="sc" class="sq"></div>
+    <div id="tc" class="sq"></div>
+</div>
+
+
+
+
+
+<script>
+
+document.getElementById("fc").onclick = function(){
+    document.getElementById("parent").style.display = "none";
+}
+
+
+  
+document.getElementById("buttons").onclick = function(){
+    document.getElementById("sasi").innerHTML = "welcome mr Ajmal K Saleem";
+
+}
+
+
+document.getElementById("buttons1").onclick = function(){
+        document.getElementById("sasi1").style.display = "none";
+    }
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+<style>
+
+    #fc{
+    
+        background-color: brown;
+    }
+    
+    #sc{
+    
+   background-color: aqua;
+}
+#tc{
+    
+   background-color: blue;
+}
+
+.sq{
+width: 100px;
+height: 100px;
+margin: 50px;
+border-radius: 50px;
+
+
+}
+
+#parent{
+    display: flex;
+flex-wrap: wrap;
+    
+}
+
+    </style>
+
+
+
+
+</html>

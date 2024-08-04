@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+ 
+<div id="circle"></div>
+
+<div id="circle2"></div>
+
+<h1>hi my name is sanju</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto mollitia iste ut reiciendis quas optio quisquam quibusdam animi incidunt consectetur exercitationem tenetur eius dignissimos, natus omnis minima eveniet magnam.</p>
+<button>fadeout</button>
+
+
+<h2>regular expression</h2>
+
+
+<script>
+$('#circle').click(function(){
+    alert("circle is clicked")
+})
+
+$("#circle2").click(function(){
+ $("#circle2").css("background-color","brown");
+ $("#circle2").css("width","200px")
+ $("#circle2").css("height","200px")
+ $("#circle2").css("border-radius","100px")
+})
+
+
+$("h1").hover(function(){
+    $("h1").html("hi my name is Ajmal K Saleem")
+})
+
+
+
+$("button").click(function(){
+    $("p").fadeOut("slow");
+})
+
+
+//regular expression
+
+var sntnc = "hi my name is  Ajmal";
+var regex= /ajmal/i;  //for matching more than 1 word use /g instead of /i
+var result = sntnc.match(regex);
+alert(result);
+
+
+</script>
+</body>
+</html>
+
+<style>
+#circle{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+#circle2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(247, 6, 6);
+    border-radius: 50px;
+    margin: 20px;
+}
+
+</style>

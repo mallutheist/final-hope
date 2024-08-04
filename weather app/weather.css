@@ -1,0 +1,34 @@
+body{
+    background-color: black ;
+}
+
+.row{
+   justify-content: center  ;
+   
+ display: flex;
+  
+   
+}
+
+
+.card{
+
+    background-color: rgb(34, 33, 33) ;
+    height: 400px  ;
+    width: 300px ;
+    margin-top: 70px ;
+    margin-bottom: 50px ;
+    border-radius: 10% ;
+    box-shadow: inset ;
+  
+}
+
+.carditemss{
+    
+    margin-left: 50%;
+    margin-left: 40px;
+    color: aliceblue;
+    align-items: center  ;
+    justify-content: center  ;
+    
+}

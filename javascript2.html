@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input id="input1" type="text">
+<button id="button1">click me</button>
+<p id="para1">hi iam ajmal</p>
+
+
+
+<h1></h1>
+
+<script>
+
+document.getElementById("button1").onclick = function(){
+    var val;
+    val= document.getElementById("input1").value;
+    document.getElementById("para1").innerHTML = "<h1>" + val + "</h1>";
+}
+
+</script>
+
+</body>
+</html>

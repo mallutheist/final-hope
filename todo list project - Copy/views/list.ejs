@@ -1,0 +1,29 @@
+<%- include('header'); -%>
+
+    <div class="box">
+        <h1>Todo List</h1>
+    </div>
+    <div class="box">
+        <form action="/delete" method="post">
+       <% ejes.forEach((items)=>{ %>
+        <input style="float: left;"  type="checkbox" value="<%= items._id %>"  name="checkbox" onchange="this.form.submit()">
+        <p> <%= items.name %> </p>
+        <%   }) %>
+    </form>
+         
+     
+
+        <form action="/" method="POST">
+            <input type="text" name="ele1" placeholder="Enter the task" required>
+            <button type="submit">+</button>
+
+
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
+

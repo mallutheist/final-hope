@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>predict length</title>
+   
+</head>
+
+<body>
+    <h1>enter your text and i will give its length</h1>
+    <input id="inp1" type="text">
+    <button id="btn1">click here</button>
+    <h3 id="out1">No text entered</h3>
+
+
+
+
+    <script>
+
+    
+
+
+        document.getElementById("btn1").onclick = function () {
+            var x;
+            x = document.getElementById("inp1").value.length;
+            document.getElementById("out1").innerHTML = "lenghth of your text is = " + x;
+        };
+
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    #out1 {
+        color: red;
+    }
+</style>
